@@ -2,91 +2,91 @@
   {
     "title": "Lingote de Chocolate y Maracuyá",
     "desc": "Postre al plato. Lingote de mousse de chocolate sobre un biscuit, glaseado brillante, quenelle de helado de vainilla, coulis de maracuyá y chía, y una teja (tuile) crocante.",
-    "src": "images/Lingote de Chocolate.png",
+    "src": "images/lingote-de-chocolate.png",
     "alt": "Emplatado de lingote de chocolate, helado y coulis de maracuyá."
   },
   {
     "title": "Panna Cotta de Yogurt y Frutos Rojos",
     "desc": "Postre al plato. Panna Cotta de yogurt balanceada, gelée de sauco, esponja aireada de arándanos (técnica de sifón), merengues secos y frutos del bosque frescos.",
-    "src": "images/panna cotta.png",
+    "src": "images/panna-cotta.png",
     "alt": "Emplatado de Panna Cotta de yogurt con texturas de frutos rojos y flores."
   },
   {
     "title": "Entremet de Chocolate y Praliné",
     "desc": "Mousse de chocolate intenso con glaseado espejo. Decorado con macarons de praliné de avellanas, escultura de chocolate templado y vela de isomalt.",
-    "src": "images/Glaseado.png",
+    "src": "images/glaseado.png",
     "alt": "Entremet moderno con glaseado espejo de chocolate y decoraciones técnicas."
   },
   {
     "title": "Torta Ópera Clásica",
     "desc": "Un ícono de la pastelería francesa. Finas capas de bizcocho joconde de almendras bañado en café, crema de mantequilla (buttercream) de café y ganache de chocolate. Cubierto con un glaseado brillante de chocolate.",
-    "src": "images/Opera.png",
+    "src": "images/opera.png",
     "alt": "Porción cuadrada de Torta Ópera clásica con glaseado de chocolate y la palabra \"Opera\" escrita."
   },
   {
     "title": "Tarta Clásica de Fresas",
     "desc": "Base de masa dulce (pâte sucrée) crujiente, rellena de crema pastelera (crème pâtissière) de vainilla y coronada con un arreglo de fresas frescas y arándanos.",
-    "src": "images/Tarta Clásica de Fresas.png",
+    "src": "images/tarta-clasica-de-fresas.png",
     "alt": "Tarta de fresas clásica con arreglo en forma de flor."
   },
   {
     "title": "Entremet Tropical de Coco y Piña",
     "desc": "Mousse de coco y piña, sobre una base de bizcocho joconde impreso (biscuit joconde imprimé). Decorado con plátano, fresas y frutas tropicales frescas.",
-    "src": "images/Entremet Tropical.png",
+    "src": "images/entremet-tropical.png",
     "alt": "Entremet de coco y piña con bizcocho impreso verde y decoración de frutas."
   },
   {
     "title": "Entremet de Durazno y Chocolate",
     "desc": "Mousse de durazno con glaseado brillante, sobre un bizcocho joconde impreso (biscuit joconde imprimé) de chocolate. Decorado con gajos de durazno y frambuesas.",
-    "src": "images/Entremet de Durazno y Chocolate.jpg",
+    "src": "images/entremet-de-durazno-y-chocolate.jpg",
     "alt": "Entremet de durazno con bizcocho impreso de puntos de chocolate."
   },
   {
     "title": "Surtido de Panadería (Boulangerie)",
     "desc": "Muestra de panadería artesanal, incluyendo panes rústicos, panecillos (petits pains) y croissants. Demostración de técnicas de formado y horneado.",
-    "src": "images/Surtido de Panadería.png",
+    "src": "images/surtido-de-panaderia.png",
     "alt": "Surtido de panes artesanales sobre una rejilla."
   },
   {
     "title": "Rosca Trenzada de Canela (Viennoiserie)",
     "desc": "Clásica rosca de pan dulce trenzada con relleno de canela. Demostración de técnica de masa enriquecida (viennoiserie), formado complejo y horneado.",
-    "src": "images/Rosca Trenzada de Canela.png",
+    "src": "images/rosca-trenzada-de-canela.png",
     "alt": "Una rosca de pan dulce trenzada con canela sobre una rejilla de enfriamiento."
   },
   {
     "title": "Panettone Artesanal",
     "desc": "Panettone de masa madre (lievito) con una costra (glassa) de almendras y azúcar perlada. Demostración de técnica en panadería de alta fermentación.",
-    "src": "images/Panettone Artesanal.jpg",
+    "src": "images/panettone-artesanal.jpg",
     "alt": "Primer plano de la cúpula de un panettone artesanal."
   },
   {
     "title": "Coulant de Chocolate y Frutos Rojos",
     "desc": "Clásico volcán o coulant de chocolate, acompañado de quenelle de crema de fresa, frutos rojos frescos y una espectacular teja de coral (tuile de corail) roja.",
-    "src": "images/Coulant de Chocolate y Frutos Rojos.png",
+    "src": "images/coulant-de-chocolate-y-frutos-rojos.png",
     "alt": "Emplatado de volcán de chocolate con teja de coral."
   },
   {
     "title": "Texturas de Mango",
     "desc": "Postre al plato. Caja crocante de tuile (teja) rellena de roles de mango fresco, sobre una salsa de mango y menta, con puntos de coulis y frambuesas.",
-    "src": "images/Texturas de Mango.png",
+    "src": "images/texturas-de-mango.png",
     "alt": "Emplatado de postre de mango en una caja de tuile."
   },
   {
     "title": "Torta Húmeda de Chocolate Intenso",
     "desc": "Bizcocho de chocolate húmedo con cacao al 70%, relleno y cubierto con un ganache de chocolate brillante. Decorado con frutos rojos frescos y aguaymanto.",
-    "src": "images/Torta Húmeda de Chocolate Intenso.png",
+    "src": "images/torta-humeda-de-chocolate-intenso.png",
     "alt": "Rebanada de torta de chocolate servida con fresas y arándanos frescos."
   },
   {
     "title": "Entremet de Lúcuma y Coco",
     "desc": "Mousse de lúcuma con un glaseado brillante, decorado con un patrón de chocolate. Base rodeada de coco tostado y coronado con aguaymanto fresco.",
-    "src": "images/Entremet de Lúcuma y Coco.png",
+    "src": "images/entremet-de-lucuma-y-coco.png",
     "alt": "Entremet de lúcuma y coco con patrón de puntos."
   },
   {
     "title": "Crumble de Manzana Rústico",
     "desc": "Clásico crumble de manzana y canela en ramequín individual. Decorado con una lámina de manzana deshidratada y frutos rojos.",
-    "src": "images/Crumble de Manzana Rustico.jpg",
+    "src": "images/crumble-de-manzana-rustico.jpg",
     "alt": "Crumble de manzana en ramequín blanco."
   }
 ]

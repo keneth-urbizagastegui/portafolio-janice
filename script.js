@@ -116,18 +116,23 @@ function initParallaxHero(){
 async function setupHeroImage(){
   const el = document.querySelector('.hero-image');
   if (!el) return;
-  const sources = ['images/Hero.webp','images/Hero.jpeg','images/Hero.jpg','images/Hero.png'];
-  for (const src of sources){
-    try{
-      const res = await fetch(src, { method: 'HEAD', cache: 'no-store' });
-      if (res.ok){
-        el.src = src;
-        const preload = document.querySelector('link[rel="preload"][as="image"]');
-        if (preload) preload.href = src;
-        const og = document.querySelector('meta[property="og:image"]');
-        if (og) og.setAttribute('content', src);
-        break;
-      }
-    }catch(e){}
+  const candidates = ['images/hero.webp','images/hero.jpeg','images/hero.jpg','images/hero.png'];
+  for (const raw of candidates){
+    const src = encodeURI(raw);
+    const ok = await new Promise((resolve) => {
+      const test = new Image();
+      test.decoding = 'async';
+      test.onload = () => resolve(true);
+      test.onerror = () => resolve(false);
+      test.src = src;
+    });
+    if (ok){
+      el.src = src;
+      const preload = document.querySelector('link[rel="preload"][as="image"]');
+      if (preload) preload.href = src;
+      const og = document.querySelector('meta[property="og:image"]');
+      if (og) og.setAttribute('content', src);
+      break;
+    }
   }
 }
