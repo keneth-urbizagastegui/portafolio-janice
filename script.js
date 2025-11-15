@@ -43,7 +43,7 @@ function createGalleryItem(item) {
     `${base}-1024.webp 1024w`,
     `${base}-1440.webp 1440w`
   ].join(', ');
-  img.sizes = "(min-width:1024px) 33vw, (min-width:700px) 50vw, 100vw";
+  img.sizes = "(min-width:1024px) calc((100vw - 64px)/3), (min-width:700px) calc((100vw - 56px)/2), calc(100vw - 48px)";
   img.alt = item.alt || item.title || "Trabajo de pastelería";
   img.loading = "lazy";
   img.decoding = "async";
@@ -147,7 +147,7 @@ async function setupHeroImage(){
         `${base}-1200.webp 1200w`,
         `${base}-1600.webp 1600w`
       ].join(', ');
-      el.sizes = "100vw";
+      el.sizes = "min(100vw, 1200px)";
       const preload = document.querySelector('link[rel="preload"][as="image"]');
       if (preload) preload.href = src;
       const og = document.querySelector('meta[property="og:image"]');
