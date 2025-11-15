@@ -34,10 +34,16 @@ function createGalleryItem(item) {
 
   const img = document.createElement("img");
   img.className = "gallery-img";
-  img.src = item.src;
+  img.src = encodeURI(item.src);
   img.alt = item.alt || item.title || "Trabajo de pastelería";
   img.loading = "lazy";
   img.decoding = "async";
+  img.onerror = () => {
+    const fallback = (encodeURI(item.src || "").replace(/\.png$/i, ".jpg")) || "";
+    if (fallback && fallback !== img.src){
+      img.src = fallback;
+    }
+  };
 
   const overlay = document.createElement("figcaption");
   overlay.className = "gallery-overlay";
