@@ -9,15 +9,21 @@ except Exception as e:
 IMG_DIR = Path(__file__).resolve().parent.parent / "images"
 
 def convert(path: Path):
-    out = path.with_suffix('.webp')
-    if out.exists():
-        return
     img = Image.open(path)
-    if img.mode in ("RGBA", "LA"):
-        img.save(out, format="WEBP", quality=85, method=6)
-    else:
-        img = img.convert("RGB")
-        img.save(out, format="WEBP", quality=85, method=6)
+    base = path.with_suffix("")
+    full = base.with_suffix(".webp")
+    if not full.exists():
+        im = img if img.mode in ("RGBA", "LA") else img.convert("RGB")
+        im.save(full, format="WEBP", quality=85, method=6)
+    widths = [480, 768, 1024, 1440]
+    for w in widths:
+        out = Path(f"{base}-{w}.webp")
+        if out.exists():
+            continue
+        im = img.copy()
+        im = im.convert("RGB")
+        im.thumbnail((w, 9999), Image.Resampling.LANCZOS)
+        im.save(out, format="WEBP", quality=85, method=6)
 
 def main():
     exts = {".png", ".jpg", ".jpeg"}

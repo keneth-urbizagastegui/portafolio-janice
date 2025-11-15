@@ -36,6 +36,14 @@ function createGalleryItem(item) {
   img.className = "gallery-img";
   const webp = encodeURI(item.src.replace(/\.(png|jpg|jpeg)$/i, '.webp'));
   img.src = webp;
+  const base = encodeURI(item.src.replace(/\.(png|jpg|jpeg|webp)$/i, ''));
+  img.srcset = [
+    `${base}-480.webp 480w`,
+    `${base}-768.webp 768w`,
+    `${base}-1024.webp 1024w`,
+    `${base}-1440.webp 1440w`
+  ].join(', ');
+  img.sizes = "(min-width:1024px) 33vw, (min-width:700px) 50vw, 100vw";
   img.alt = item.alt || item.title || "Trabajo de pastelería";
   img.loading = "lazy";
   img.decoding = "async";
@@ -133,6 +141,13 @@ async function setupHeroImage(){
     });
     if (ok){
       el.src = src;
+      const base = encodeURI(src.replace(/\.(png|jpg|jpeg|webp)$/i, ''));
+      el.srcset = [
+        `${base}-800.webp 800w`,
+        `${base}-1200.webp 1200w`,
+        `${base}-1600.webp 1600w`
+      ].join(', ');
+      el.sizes = "100vw";
       const preload = document.querySelector('link[rel="preload"][as="image"]');
       if (preload) preload.href = src;
       const og = document.querySelector('meta[property="og:image"]');
